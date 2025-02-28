@@ -54,7 +54,7 @@ export default function RootLayout({
                 </Link>
                 <div className="hidden md:flex items-center space-x-6">
                   <Link href="/company-formation" className="text-gray-700 hover:text-red-600">Company Formation</Link>
-                  <Link href="/account-opening" className="text-gray-700 hover:text-red-600">Account Opening</Link>
+                  <Link href="/account-opening" className="text-gray-700 hover:text-red-600">Bank Accounts</Link>
                   <Link href="/services" className="text-gray-700 hover:text-red-600">All Services</Link>
                   <Link href="/ibc-club" className="hover:text-red-600">
                     <span className="text-blue-600">tax</span>
