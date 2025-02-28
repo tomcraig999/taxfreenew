@@ -6,5 +6,3 @@
 	precomposeunicode = true
 [remote "origin"]
 	url = https://github.com/tomcraig999/taxfreecompanies.git
-	fetch = +refs/*:refs/*
-	mirror = true
