@@ -41,20 +41,21 @@ export default function Home() {
                 </summary>
                 <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
                   {[
-                    'Hong Kong', 
-                    'Panama', 
-                    'UK LLP', 
-                    'Nevis', 
-                    'Singapore', 
-                    'Cayman Islands', 
-                    'Monaco', 
-                    'Marshal Islands', 
-                    'Jersey', 
-                    'Isle of Man', 
-                    'Bahamas', 
+                    'Bahamas',
+                    'British Virgin Islands',
+                    'Brunei',
+                    'Cayman Islands',
                     'Costa Rica',
-                    'UAE', 
-                    'Brunei'
+                    'Hong Kong',
+                    'Isle of Man',
+                    'Jersey',
+                    'Marshal Islands',
+                    'Monaco',
+                    'Nevis',
+                    'Panama',
+                    'Singapore',
+                    'UAE',
+                    'UK LLP'
                   ].map((jurisdiction) => (
                     <button
                       key={jurisdiction}
