@@ -100,6 +100,28 @@ export default function Home() {
               </p>
             </div>
           </div>
+          
+          {/* Services Section */}
+          <div className="mt-16">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Additional Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="/nominees" className="group block p-6 border rounded-lg hover:border-red-500 transition-colors">
+                <h3 className="text-xl font-semibold mb-3 group-hover:text-red-600">Nominee Services</h3>
+                <p className="text-gray-600">
+                  Professional nominee directors and shareholders for enhanced privacy and compliance with local requirements.
+                </p>
+                <div className="mt-4 text-red-600 font-medium">
+                  Learn more →
+                </div>
+              </Link>
+              <div className="p-6 border rounded-lg">
+                <h3 className="text-xl font-semibold mb-3">Banking Assistance</h3>
+                <p className="text-gray-600">
+                  Support with opening corporate bank accounts and managing international banking relationships.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
