@@ -1,6 +1,6 @@
 # Offshore Portal
 
-A Next.js-based web application for offshore company formation services.
+A Next.js-based web application for offshore company formation services. Updated on March 19, 2025.
 
 ## Features
 
