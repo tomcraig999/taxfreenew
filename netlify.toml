@@ -1,11 +1,18 @@
+# Option 1: Use pre-built files from gh-pages branch
 [build]
-  command = "NEXT_PUBLIC_BASE_PATH=/offshore-portal npm run build"
-  publish = "out"
+  # No build command needed as we're using pre-built files
+  publish = "gh-pages/offshore-portal"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# Option 2: If you want to build from source
+# [build]
+#   base = "."
+#   command = "NEXT_PUBLIC_BASE_PATH=/offshore-portal npm run build"
+#   publish = "out"
+#
+# [[plugins]]
+#   package = "@netlify/plugin-nextjs"
 
 [[redirects]]
   from = "/*"
-  to = "/offshore-portal/index.html"
+  to = "/index.html"
   status = 200
