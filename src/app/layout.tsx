@@ -53,7 +53,14 @@ export default function RootLayout({
                     <span className="text-red-600">companies</span>
                     <span className="text-gray-700">™</span>
                   </Link>
-                  <span className="text-sm text-gray-700 mt-0.5">by LibertyMundo</span>
+                  <Link 
+                    href="https://www.libertymundo.com" 
+                    className="text-sm text-gray-700 mt-0.5 hover:text-blue-600"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    by LibertyMundo
+                  </Link>
                 </div>
                 <div className="hidden md:flex items-center space-x-6">
                   <Link href="/company-formation" className="text-gray-700 hover:text-red-600">Company Formation</Link>
