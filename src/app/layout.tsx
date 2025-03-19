@@ -46,12 +46,15 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center space-x-8">
-                <Link href="/" className="font-bold text-xl">
-                  <span className="text-blue-600">tax</span>
-                  <span className="text-green-600">free</span>
-                  <span className="text-red-600">companies</span>
-                  <span className="text-gray-700">™</span>
-                </Link>
+                <div className="flex flex-col">
+                  <Link href="/" className="font-bold text-xl">
+                    <span className="text-blue-600">tax</span>
+                    <span className="text-green-600">free</span>
+                    <span className="text-red-600">companies</span>
+                    <span className="text-gray-700">™</span>
+                  </Link>
+                  <span className="text-sm text-gray-700 mt-0.5">by LibertyMundo</span>
+                </div>
                 <div className="hidden md:flex items-center space-x-6">
                   <Link href="/company-formation" className="text-gray-700 hover:text-red-600">Company Formation</Link>
                   <Link href="/account-opening" className="text-gray-700 hover:text-red-600">Bank Accounts</Link>
