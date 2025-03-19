@@ -113,6 +113,14 @@ export default function JurisdictionPage({ params }: { params: { slug: string } 
                 Get Started with {jurisdictionName} Company Formation
               </Link>
             </div>
+
+            {/* Jurisdiction Specific Content */}
+            <div className="mt-8 p-6 bg-gray-100 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">About {jurisdictionName}</h3>
+              <p className="text-gray-700">
+                [This section should be customized with information specific to {jurisdictionName}.]
+              </p>
+            </div>
           </div>
         </div>
       </main>

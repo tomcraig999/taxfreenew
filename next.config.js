@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/offshore-portal',
   output: 'export',
   images: {
     remotePatterns: [

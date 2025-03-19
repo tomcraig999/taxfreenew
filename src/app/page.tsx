@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { ChevronDown, Search } from 'lucide-react'
 
 export default function Home() {
@@ -32,41 +33,39 @@ export default function Home() {
               Select Your Preferred Jurisdiction
             </h2>
             <div className="relative">
-              <details className="w-full">
-                <summary 
-                  className="w-full flex items-center justify-between bg-gray-50 border border-gray-300 rounded-md px-4 py-3 text-left cursor-pointer"
-                >
-                  <span className="text-gray-700">Choose a location</span>
-                  <ChevronDown className="h-5 w-5 text-gray-400" />
-                </summary>
-                <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
-                  {[
-                    'Bahamas',
-                    'British Virgin Islands',
-                    'Brunei',
-                    'Cayman Islands',
-                    'Costa Rica',
-                    'Hong Kong',
-                    'Isle of Man',
-                    'Jersey',
-                    'Marshal Islands',
-                    'Monaco',
-                    'Nevis',
-                    'Panama',
-                    'Singapore',
-                    'UAE',
-                    'UK LLP'
-                  ].map((jurisdiction) => (
-                    <button
+              <div className="w-full bg-gray-50 border border-gray-300 rounded-md px-4 py-3 text-gray-700">
+                Choose a location
+              </div>
+              <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
+                {[
+                  "Bahamas",
+                  'British Virgin Islands',
+                  'Brunei',
+                  'Cayman Islands',
+                  'Costa Rica',
+                  'Hong Kong',
+                  'Isle of Man',
+                  'Jersey',
+                  'Marshal Islands',
+                  'Monaco',
+                  'Nevis',
+                  'Panama',
+                  'Singapore',
+                  'UAE',
+                  'UK LLP'
+                ].map((jurisdiction) => {
+                  const slug = jurisdiction.toLowerCase().replace(/\s+/g, '-');
+                  return (
+                    <Link
                       key={jurisdiction}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100"
-                      onClick={() => {}}
+                      href={`/jurisdictions/${slug}`}
+                      className="block w-full text-left px-4 py-2 hover:bg-gray-100"
                     >
                       {jurisdiction}
-                    </button>
-                  ))}
-                </div>
-              </details>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
             <button 
               className="mt-4 w-full bg-red-600 text-white py-3 rounded-md hover:bg-red-700 transition-colors"
