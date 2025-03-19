@@ -58,7 +58,7 @@ export default function Home() {
                   return (
                     <Link
                       key={jurisdiction}
-                      href={`/offshore-portal/jurisdictions/${slug}.html`}
+                      href={`/jurisdictions/${slug}.html`}
                       className="block w-full text-left px-4 py-2 hover:bg-gray-100"
                     >
                       {jurisdiction}
