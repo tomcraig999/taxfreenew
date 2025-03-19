@@ -66,6 +66,7 @@ export default function RootLayout({
                   <Link href="/company-formation" className="text-gray-700 hover:text-red-600">Company Formation</Link>
                   <Link href="/account-opening" className="text-gray-700 hover:text-red-600">Bank Accounts</Link>
                   <Link href="/services" className="text-gray-700 hover:text-red-600">All Services</Link>
+                  <Link href="/offshore-portal/nominees" className="text-gray-700 hover:text-red-600">Nominee</Link>
                   <Link href="/ibc-club" className="hover:text-red-600">
                     <span className="text-blue-600">tax</span>
                     <span className="text-green-600">free</span>
@@ -90,7 +91,6 @@ export default function RootLayout({
               <Link href="/jurisdictions" className="text-gray-600 hover:text-red-600">Jurisdictions</Link>
               <Link href="/setup" className="text-gray-600 hover:text-red-600">How To Set Up</Link>
               <Link href="/fees" className="text-gray-600 hover:text-red-600">Fees</Link>
-              <Link href="/nominee" className="text-gray-600 hover:text-red-600">Nominee</Link>
               <Link href="/change-agent" className="text-gray-600 hover:text-red-600">Change Agent</Link>
               <Link href="/renewal" className="text-gray-600 hover:text-red-600">Company Renewal</Link>
               <Link href="/faqs" className="text-gray-600 hover:text-red-600">FAQs</Link>
