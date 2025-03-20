@@ -9,6 +9,6 @@ NEXT_PUBLIC_BASE_PATH=/taxfree npm run build
 # Commit and push changes to gh-pages branch
 git add .
 git commit -m "Deploy to GitHub Pages"
-git push origin gh-pages
+git push taxfree gh-pages
 
 echo "Website deployed to GitHub Pages."
