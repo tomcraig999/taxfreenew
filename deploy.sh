@@ -4,7 +4,7 @@
 
 # Build and export the Next.js app
 echo "Building and exporting the Next.js app..."
-NEXT_PUBLIC_BASE_PATH=/taxfree npm run build
+npm run build
 
 # Commit and push changes to gh-pages branch
 git add .
