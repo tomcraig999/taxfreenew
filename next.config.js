@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/offshore-portal',
+  basePath: '/taxfree',
   output: 'export',
   images: {
     remotePatterns: [
